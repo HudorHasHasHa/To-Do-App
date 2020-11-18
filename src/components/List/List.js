@@ -13,7 +13,7 @@ class List extends React.Component {
     }
     static propTypes = {
         title: PropTypes.node.isRequired,
-        imageSrc: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
         description: PropTypes.node,
         columns: PropTypes.array,
     }
@@ -40,14 +40,14 @@ class List extends React.Component {
     render() {
         return (
         <section className={styles.Component}>
-            <Hero titleText={this.props.title} imageSrc={this.props.imageSrc}/>
+            <Hero titleText={this.props.title} imageSrc={this.props.image}/>
             <div className={styles.description}>
                 {ReactHtmlParser(this.props.description)}
                 {/* {this.props.description} */}
             </div>
             <div className={styles.columns}>
-                {this.state.columns.map(({title, ...columnProps}) => (
-                    <Column titleColumn={title} {...columnProps} />
+                {this.state.columns.map(({title, ...columnsProps}) => (
+                    <Column titleColumn={title} {...columnsProps}/>
                 ))}
             </div>
             <div className={styles.creator}>
