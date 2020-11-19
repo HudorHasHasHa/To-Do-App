@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Card.scss'
+import styles from './Card.scss';
 import Column from '../Column/Column.js';
 
 class Card extends React.Component {
@@ -7,11 +7,12 @@ class Card extends React.Component {
     }
     
     render() {
-        return (
-            <section className={styles.component}>
-                <h3>{this.props.title}</h3>
-            </section>
-        )
+      const {title} = this.props;
+      return (
+        <section className={styles.component}>
+          <h3>{title}</h3>
+        </section>
+      );
     }
 }
 
