@@ -28,12 +28,6 @@ class List extends React.Component {
             {ReactHtmlParser(description)}
           </div>
 
-          {/* <Hero titleText={this.props.title} imageSrc={this.props.image}/>
-          <div className={styles.description}>
-            {ReactHtmlParser(this.props.description)}
-            {this.props.description}
-          </div>  */}
-
           <div className={styles.columns}>
             {columns.map(columnData => (
               <Column key={columnData.id} {...columnData} />
