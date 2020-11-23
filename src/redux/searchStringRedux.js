@@ -22,6 +22,7 @@ export const createActionChange = payload => (
 export default function reducer(statePart = '', action = {}) {
   switch (action.type) {
     case CHANGE:
+      //return [...statePart, action.payload];
       return action.payload;
     default:
       return statePart;
