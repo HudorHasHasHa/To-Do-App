@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Column.scss';
+// import styles from './Column.scss';
 import {settings} from '../../data/dataStore.js';
 import PropTypes from 'prop-types';
 // import Creator from '../Creator/Creator.js';

@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import List from './List';
-import {getColumnsForList, createActionAddColumn} from '../../redux/columnsRedux';
+import {getColumnsForList, createActionAddColumn} from 'C:/Users/noxiik/Desktop/projekty/ReactWebpack/src/redux/columnsRedux.js';
 
 // export const getColumnsForList = ({columns}, listId) => 
 // columns.filter(column => column.listId == listId);
