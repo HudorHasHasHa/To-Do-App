@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Column from './column';
+import Column from './Column.js';
 import {createActionAddCard, getCardsForColumn} from '../../redux/cardsRedux';
 
 // export const getcardsForcolumn = ({ cards }, columnId) =>
