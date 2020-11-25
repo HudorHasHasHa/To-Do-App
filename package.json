@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint src/",
-    "start": "webpack-dev-server --mode development --open --hot && npm run http-server dist",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "http-server": "npm run http-server dist",
     "build": "webpack --mode production",
     "husky": {
       "hooks": {
