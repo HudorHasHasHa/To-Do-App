@@ -92,6 +92,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Favorite movies',
+    description: 'Interesting things I want to check out!',
+    image: 'https://image.freepik.com/free-vector/seamless-pattern-with-cinema-elements_225004-1154.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'IT news',
+    description: 'Interesting things I want to check out!',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  },
 ];
 
 const columns = [
