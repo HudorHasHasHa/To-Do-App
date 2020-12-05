@@ -1,18 +1,19 @@
 import React from 'react';
-import Icon from '../Icon/Icon.js';
 import Card from '../Card/Card.js';
-import Container from '../Container/Container.js';
+import PropTypes from 'prop-types';
+import styles from '../Column/Column.scss';
+import {withRouter} from 'react-router';
 
 class SearchResults extends React.Component{
   static propTypes = {
-
+    cards: PropTypes,
   }
 
   render() {
     const{cards} = this.props;
    
     return (
-      <div>
+      <div className={styles.component}>
         {cards.map(({key, ...cardsProps}) => (
           <Card key={key} {...cardsProps} />
         ))}
@@ -21,4 +22,4 @@ class SearchResults extends React.Component{
   }
 }
 
-export default SearchResults;
+export default withRouter(SearchResults);
