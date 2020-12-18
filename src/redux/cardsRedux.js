@@ -4,7 +4,9 @@ import shortid from 'shortid';
 export const getCardsForColumn = ({cards}, columnId) => cards.filter(card => card.columnId == columnId);
 // export const getCardsForColumn = ({cards, searchString}, columnId) => cards.filter(card => card.columnId == columnId && new RegExp(searchString, 'i').test(card.title));
 // export const getCardsForSearchResults = ({searchString, lists}) => lists.filter(list => list.cards.filter(card => new RegExp(searchString, 'i').test(card.title)));
-export const getCardsForSearchResults = ({searchString, cards}) => cards.filter(card => new RegExp(searchString, 'i').test(card.title));
+export const getCardsForSearchResults = ({cards}, searchString) => {
+  return cards.filter(card => new RegExp(searchString, 'i').test(card.title));
+};
 // action name creator
 const reducerName = 'cards';
 const createActionName = name => `app/${reducerName}/${name}`;

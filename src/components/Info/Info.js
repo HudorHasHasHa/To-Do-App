@@ -5,8 +5,10 @@ import Hero from '../Hero/Hero';
 
 const Info = () => (
   <Container>
-    <Hero titleText={settings.Info.title} imageSrc={settings.Info.image}/>
-    {settings.Info.defaultText}
+    <div>
+      <Hero titleText={settings.Info.title} imageSrc={settings.Info.image}/>
+      {settings.Info.defaultText}
+    </div>
   </Container>
 );
 
